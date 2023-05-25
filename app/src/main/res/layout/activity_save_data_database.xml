@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regis"
+    tools:context=".SaveData_Database">
+
+    <TextView
+        android:id="@+id/CERS"
+        android:layout_width="211dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="60dp"
+        android:alpha="10.5"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="C E R S"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/CERS"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/weytrue" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="210dp"
+        android:layout_height="35dp"
+        android:text="User Information"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CERS"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/receive_Name"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="28dp"
+        android:hint="Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+    <TextView
+        android:id="@+id/receive_email"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receive_Name" />
+
+
+    <TextView
+        android:id="@+id/receive_DOB"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:hint="Date of Birth"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receive_email" />
+
+    <TextView
+        android:id="@+id/receive_PhoneNumber"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:hint="Phone Number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receive_DOB" />
+
+    <TextView
+        android:id="@+id/receive_UserOrganization"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:hint="Rescuer Organization"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receive_PhoneNumber" />
+
+    <TextView
+        android:id="@+id/receive_UserRole"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:hint="Role/Specialization"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receive_UserOrganization" />
+
+    <TextView
+        android:id="@+id/receive_OrgAddress"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:hint="Organization Address"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receive_UserRole" />
+
+    <TextView
+        android:id="@+id/receive_BasicSkills"
+        android:layout_width="334dp"
+        android:layout_height="155dp"
+        android:hint="Basic Skills"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receive_OrgAddress" />
+
+    <Button
+        android:id="@+id/SaveData_Button"
+        android:layout_width="195dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bubble"
+        android:text="SAVE"
+        android:textSize="20sp"
+        app:backgroundTint="#FFA500"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receive_BasicSkills"
+        app:layout_constraintVertical_bias="0.377" />
+
+    <ProgressBar
+        android:id="@+id/progressBarRescuerSaveData"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="109dp"
+        android:layout_height="115dp"
+        android:elevation="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

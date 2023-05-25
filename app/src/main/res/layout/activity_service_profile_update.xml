@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userprof2"
+    tools:context=".Rescuer_Registration.ServiceProfileUpdate">
+
+    <EditText
+        android:id="@+id/Edit_Rescuer_OrgName"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/bubble"
+        android:hint="Enter your Org Name"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rescuer Organization"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Rescuer_OrgName"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Rescuer_OrgName"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Rescuer_OrgName" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rescuer Role"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Rescuer_Role"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Rescuer_Role"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Rescuer_Role" />
+
+    <EditText
+        android:id="@+id/Edit_Rescuer_Role"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bubble"
+        android:hint="Enter your Organization Role"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Rescuer_OrgName" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rescuer Organization Address"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Rescuer_OrgAddress"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Rescuer_OrgAddress"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Rescuer_OrgAddress"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Rescuer_Role" />
+
+    <EditText
+        android:id="@+id/Edit_Rescuer_OrgAddress"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bubble"
+        android:hint="Enter your Organization Address"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Rescuer_Role" />
+
+    <SearchView
+        android:id="@+id/Search_View_BasicSkill"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bubble"
+        android:queryHint="Find your Basic Skills"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Rescuer_OrgAddress" />
+
+    <ListView
+        android:id="@+id/ListView_BasicSkills"
+        android:layout_width="365dp"
+        android:layout_height="28dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Search_View_BasicSkill" />
+
+    <Button
+        android:id="@+id/SaveUpdatedProfile"
+        android:layout_width="195dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/bubble"
+        android:text="UPDATE"
+        android:textSize="20sp"
+        app:backgroundTint="#FFA500"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListView_BasicSkills"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBarRescuer_UpdateProfile"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="109dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

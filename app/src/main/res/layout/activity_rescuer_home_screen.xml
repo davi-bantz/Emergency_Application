@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userprof2"
+    tools:context=".RescuerProfile.Rescuer_HomeScreenActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/emergency_contact"
+        android:fontFamily="@font/archivo_black"
+        android:text="EMERGENCIES"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <view
+        android:id="@+id/Emergency_Received"
+        class="androidx.appcompat.app.AlertController$RecycleListView"
+        android:layout_width="407dp"
+        android:layout_height="552dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+    </view>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Rescuer"
+        android:layout_width="410dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/emergency_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Emergency_Received">
+
+        <ImageButton
+            android:id="@+id/EmergencyButton"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/baseline_warning_24"
+            android:contentDescription="EmergencyList" />
+
+        <ImageButton
+            android:id="@+id/MapViewButton"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/EmergencyButton"
+            android:background="@drawable/baseline_map_24"
+            android:contentDescription="MapView" />
+
+        <ImageButton
+            android:id="@+id/UserSettingsButton"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/MapViewButton"
+            android:background="@drawable/settings_icon"
+            android:contentDescription="Settings" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:contentDescription="add"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="@+id/Emergency_Received"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FABEmergency"
+        android:contentDescription="emergency"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone"
+        android:clickable="true"
+        android:src="@drawable/baseline_emergency_24"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

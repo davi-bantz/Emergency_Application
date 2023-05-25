@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userprof2"
+    tools:context=".RescuerProfile.MapViewActivity">
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView_Rescuer"
+        android:layout_width="408dp"
+        android:layout_height="645dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Rescuer_frMap"
+        android:layout_width="410dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/emergency_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapView_Rescuer">
+
+        <ImageButton
+            android:id="@+id/EmergencyButton_frMapAct"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/baseline_warning_24"
+            android:contentDescription="EmergencyList" />
+
+        <ImageButton
+            android:id="@+id/MapViewButton_frMap"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/EmergencyButton_frMapAct"
+            android:background="@drawable/baseline_map_24"
+            android:contentDescription="MapView" />
+
+        <ImageButton
+            android:id="@+id/UserSettingsButton_frMap"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/MapViewButton_frMap"
+            android:background="@drawable/settings_icon"
+            android:contentDescription="Settings" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
